@@ -1,0 +1,14 @@
+.navbar {
+  background-color: #407EC9;
+  height: 50px; }
+  .navbar a {
+    color: #FABBCB; }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+
+.content-block {
+  margin-top: 50px; }
+
+/*# sourceMappingURL=style.css.map */

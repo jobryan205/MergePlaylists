@@ -1,0 +1,26 @@
+$primary-color: #407EC9;
+$secondary-color: #FABBCB;
+
+// fonts are brushscript and monstro
+$primary-font-family: font-family: 'Brush Script MT', cursive;
+$navbar-height: 50px;
+
+.navbar {
+	background-color: $primary-color;
+	height: $navbar-height;
+	
+	a {
+		font-family: $primary-font-family;
+		color: $secondary-color;
+	}
+
+	.navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+}
+
+.content-block {
+	margin-top: $navbar-height;
+}
