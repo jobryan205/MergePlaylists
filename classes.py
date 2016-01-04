@@ -1,7 +1,7 @@
 class Playlist:
-	def __init__(self, name, id, owner, photoURLs, playlistURL):
+	def __init__(self, name, id, owner, images, playlistURL):
 		self.name = name
 		self.id = id
 		self.owner = owner
-		self.photoURLs = photoURLs
+		self.images = images
 		self.playlistURL = playlistURL

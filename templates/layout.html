@@ -4,12 +4,27 @@
     <title>Merge Playlists</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/SASS/style.css">
 
   </head>
+ 
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src="...">
+        </a>
+
+        <a class="btn nav navbar-btn navbar-right" href="http://localhost:5000/login">
+          <img alt="Login" class="visible-md visible-lg" src="static/images/spotify-buttons/login/png/log_in-desktop-medium.png">
+          <img alt="Login" class="visible-xs visible-sm" src="static/images/spotify-buttons/login/png/log_in-desktop-small.png">
+        </a>
+      </div>
+    </nav>
+  </header> 
 
   <body>
-    <div>
+    <div class="content-block">
       {% block content %}
       {% endblock %}
     </div>

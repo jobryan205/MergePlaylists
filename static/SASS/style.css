@@ -1,14 +1,2 @@
-.navbar {
-  background-color: #407EC9;
-  height: 50px; }
-  .navbar a {
-    color: #FABBCB; }
-  .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top; }
-
-.content-block {
-  margin-top: 50px; }
-
+.navbar{background:#DEDBD2;background:-webkit-linear-gradient(legacy-direction(#ECEBE8), #DEDBD2);background:linear-gradient(#ECEBE8, #DEDBD2)}.navbar a{font-family:"Brush Script MT";color:#FABBCB}.navbar .navbar-nav{display:inline-block;float:none;vertical-align:top}.card{border:2px solid #aaa;margin:20px;width:200px;height:250px}.card-img-top{width:100%}.content-block{margin-top:50px;text-align:center}
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,33 @@
+// @import "compass";
+
 $primary-color: #407EC9;
 $secondary-color: #FABBCB;
 
+$green-gradient-top: #B4D500;
+$green-gradient-bottom: #7EAF00;
+
+$grey-gradient-top: #AAAAAA;
+$grey-gradient-bottom: #828282;
+
+$sand-gradient-top: #ECEBE8;
+$sand-gradient-bottom: #DEDBD2;
+
+
 // fonts are brushscript and monstro
-$primary-font-family: font-family: 'Brush Script MT', cursive;
+$primary-font-family: 'Brush Script MT';
 $navbar-height: 50px;
 
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
 .navbar {
-	background-color: $primary-color;
-	height: $navbar-height;
+	// background-color: $primary-color;
+	// height: $navbar-height;
+
+	@include linear-gradient($sand-gradient-top, $sand-gradient-bottom);
 	
 	a {
 		font-family: $primary-font-family;
@@ -21,6 +41,22 @@ $navbar-height: 50px;
 	}
 }
 
+.card {
+    border: 2px solid $grey-gradient-top;
+    margin:20px;
+    width: 200px;
+    height: 250px; 
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.card-title { 
+    color: black;
+}
+
 .content-block {
 	margin-top: $navbar-height;
+	text-align: center;
 }

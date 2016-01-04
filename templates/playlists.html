@@ -1,4 +1,19 @@
- <div class="jumbo">
-    <h2>Client Code<h2>
-    <h3>{{ code }}</h3>
- </div>
+<!DOCTYPE html>
+{% extends "layout.html" %}
+{% block content %}
+	 <div class="jumbo">
+	 	<ul>
+	    {% for playlist in playlists %}
+	    	<div class="card">
+	    		<h3 class="card-title">{{ playlist.name }}</h3>
+			  	<img class="card-img-top img-responsive" src={{ playlist.images[0].url }} alt="Card image cap">
+				 <!--  <div class="card-block">
+				    <h4 class="card-title">Card title</h4>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <a href="#" class="btn btn-primary">Button</a>
+				  </div> -->
+				</div>
+	    {% endfor %}
+		</ul>
+	 </div>
+ {% endblock %}
